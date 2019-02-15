@@ -1,0 +1,28 @@
+class CC {
+  private $_numero
+  private $_nombre
+  private $_CantidadSustraidaIlicitamente
+
+  public function construct($numero, $nombre, $CantidadSustraidaIlicitamente){
+    $this->_numero = $numero;
+    $this->_nombre = $nombre;
+    $this->_CantidadSustraidaIlicitamente= $CantidadSustraidaIlicitamente;
+  }
+}
+
+class PP {
+  private $_nombre;
+  private $_fecha;
+  private $_estado;
+  private $_personajes = array();
+
+  public function construct($nombre, $fecha, $estado){
+    $this->_nombre = $nombre;
+    $this->_fecha = $fecha;
+    $this->_estado = $estado;
+  }
+
+  public function añadirEntidadPersonaje(EntidadPersonaje $EntidadPersonaje){
+    $this->_EntidadPersonajes[] = $EntidadPersonaje;
+  }
+}
